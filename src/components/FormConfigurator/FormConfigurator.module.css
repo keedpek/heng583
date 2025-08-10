@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: flex;
+  gap: 10px;
+}
+
+.formRow label {
+  font-size: 24px;
+  color: #333;
+}
+
+.formRow input {
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 0px 5px;
+}

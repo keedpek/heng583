@@ -1,0 +1,19 @@
+.inputContainer {
+  position: relative;
+  margin-top: 10px;
+}
+
+.label {
+  position: absolute;
+  top: -7px;
+  left: 15px;
+  font-size: 14px;
+  padding: 0 4px;
+  background-color: #fff;
+}
+
+.input {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+}
