@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, JSX, useState } from "react";
 import style from "./CustomForm.module.css";
 import { ICustomFormProps } from "@/types/components/ICustomFormProps";
 import Input from "@/UI/Input/Input";
@@ -8,9 +8,9 @@ import Button from "@/UI/Button/Button";
 
 const CustomForm: FC<ICustomFormProps> = ({ config, onRebuild }) => {
   const { inputs, textareas, checkboxes } = config;
-  const [formData, setFormData] = useState<Record<string, string | boolean>>({
-    input: "",
-  });
+  const [formData, setFormData] = useState<Record<string, string | boolean>>(
+    {}
+  );
 
   const inputChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -36,7 +36,7 @@ const CustomForm: FC<ICustomFormProps> = ({ config, onRebuild }) => {
     }));
   };
 
-  const renderInputs = () => {
+  const renderInputs = (): JSX.Element[] => {
     return Array.from({ length: inputs }, (_, index) => {
       const number = index + 1;
       return (
@@ -51,7 +51,7 @@ const CustomForm: FC<ICustomFormProps> = ({ config, onRebuild }) => {
     });
   };
 
-  const renderTextareas = () => {
+  const renderTextareas = (): JSX.Element[] => {
     return Array.from({ length: textareas }, (_, index) => {
       const number = index + 1;
       return (
@@ -66,7 +66,7 @@ const CustomForm: FC<ICustomFormProps> = ({ config, onRebuild }) => {
     });
   };
 
-  const renderCheckboxes = () => {
+  const renderCheckboxes = (): JSX.Element[] => {
     return Array.from({ length: checkboxes }, (_, index) => {
       const number = index + 1;
       return (

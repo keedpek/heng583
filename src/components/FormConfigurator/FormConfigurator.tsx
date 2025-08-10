@@ -15,7 +15,7 @@ const FormConfigurator: FC<IFormConfiguratorProps> = ({ applyConfig }) => {
     const { name, value } = e.target;
     setConfig((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: Number(value),
     }));
   };
 

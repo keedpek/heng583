@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { IInputProps } from "@/types/components/IInputProps";
 import style from "./Input.module.css";
+import { IInputProps } from "@/types/components/IInputProps";
 
 const Input: FC<IInputProps> = ({
   className = "",

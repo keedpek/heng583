@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import style from "./Button.module.css";
 import { IButtonProps } from "@/types/components/IButtonProps";
 
