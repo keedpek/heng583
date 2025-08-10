@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import style from "./Button.module.css";
-import { ButtonProps } from "@/types/components/IButtonProps";
+import { IButtonProps } from "@/types/components/IButtonProps";
 
-const Button: FC<ButtonProps> = ({
+const Button: FC<IButtonProps> = ({
   children,
   variant = "primary",
   type = "button",
